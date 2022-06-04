@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import { getWeatherByLatLon } from "./weatherApi";
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    getWeatherByLatLon(19.4150109, -98.1410678)
+        .then(res => console.log(res))
+        .catch(err => console.log(err));
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
