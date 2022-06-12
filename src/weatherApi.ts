@@ -1,6 +1,6 @@
-import {API_URL} from "./consts/apiConsts";
+import ApiConsts from "./consts/apiConsts";
 
 export const getWeatherByLatLon = (lat: number, lon: number) =>
-     fetch(`${API_URL}&lat=${lat}&lon=${lon}`)
+     fetch(`${ApiConsts.API_URL_WEATHER}&lat=${lat}&lon=${lon}`)
          .then(response => response.json());
 
