@@ -18,10 +18,6 @@ function App() {
     setSearchString(dataString)
   }
 
-  function submitSearch() {
-    getLatLon(searchString);
-  }
-
   function getLatLon(searchString: string) {
     googleMapsApi(searchString);
   }
@@ -34,8 +30,8 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <div>
-            <input type="text" id="input-text" onChange={(event) => onChangeEntry(event.target.value)} />
-            <button id="button" onClick={() => submitSearch()}>Obtener Coordenadas</button>
+            <input type="text" id="input-text" onChange={(event) =>setSearchString(event.target.value)} />
+            <button id="button" onClick={() => getLatLon(searchString)}>Obtener Coordenadas</button>
         </div>
         <a
           className="App-link"
