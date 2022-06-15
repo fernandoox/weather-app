@@ -13,12 +13,7 @@ function App() {
       .catch(err => console.log(err));
   }, [])
 
-
-  function onChangeEntry(dataString: string) {
-    setSearchString(dataString)
-  }
-
-  function getLatLon(searchString: string) {
+  const getLatLon = (searchString: string) => {
     googleMapsApi(searchString);
   }
 
