@@ -1,10 +1,9 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import { getWeatherByLatLon } from './weatherApi';
 import { googleMapsApi } from './apis/googleMapsApi';
 import logo from './logo.svg';
 import './App.css';
 
-let ok = 6;
 function App() {
   const [searchString, setSearchString] = useState<string>('');
   useEffect(() => {
