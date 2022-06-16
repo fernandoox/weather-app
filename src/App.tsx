@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { getWeatherByLatLon } from "./weatherApi";
-import { googleMapsApi } from "./apis/googleMapsApi"
+import React, { useEffect, useState, useCallback } from 'react';
+import { getWeatherByLatLon } from './weatherApi';
+import { googleMapsApi } from './apis/googleMapsApi';
 import logo from './logo.svg';
 import './App.css';
 
+let ok = 6;
 function App() {
-  const [searchString, setSearchString] = useState<string>("");
+  const [searchString, setSearchString] = useState<string>('');
   useEffect(() => {
-
     getWeatherByLatLon(19.4150109, -98.1410678)
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
-  }, [])
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }, []);
 
   const getLatLon = (searchString: string) => {
     googleMapsApi(searchString);
-  }
+  };
 
   return (
     <div className="App">
@@ -25,8 +25,14 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <div>
-            <input type="text" id="input-text" onChange={(event) =>setSearchString(event.target.value)} />
-            <button id="button" onClick={() => getLatLon(searchString)}>Obtener Coordenadas</button>
+          <input
+            type="text"
+            id="input-text"
+            onChange={(event) => setSearchString(event.target.value)}
+          />
+          <button id="button" onClick={() => getLatLon(searchString)}>
+            Obtener Coordenadas
+          </button>
         </div>
         <a
           className="App-link"
