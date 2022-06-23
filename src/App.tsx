@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { googleMapsApi } from './apis/googleMapsApi';
-import { getWeatherByLatLon } from './apis/weatherApi';
-import logo from './logo.svg';
 import './App.css';
+import DarkMode from './component/DarkMode';
+import logo from './logo.svg';
+import { getWeatherByLatLon } from './weatherApi';
 
 function App() {
   const [searchString, setSearchString] = useState<string>('');
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <DarkMode/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
