@@ -1,0 +1,24 @@
+{
+  "projectName": "weather-app",
+  "projectOwner": "fernandoox",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 110,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "fernandoox",
+      "name": "Luis Fernando Fernández Cruz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43055981?v=4",
+      "profile": "https://github.com/fernandoox",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
