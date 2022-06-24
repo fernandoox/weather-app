@@ -16,7 +16,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/43055981?v=4",
       "profile": "https://github.com/fernandoox",
       "contributions": [
-        "code"
+        "code",
+        "doc",
+        "tool"
       ]
     }
   ],

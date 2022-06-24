@@ -14,28 +14,3 @@ https://weather-app-seven-flax.vercel.app/
 
 ## 🌤️ Weather API
 You can review the documentation for the [OpenWeatherMap API](https://openweathermap.org/api) at any time.
-
-
-## 🍻 Contributing
-
-@all-contributors add
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/fernandoox"><img src="https://avatars.githubusercontent.com/u/43055981?v=4?s=110" width="110px;" alt=""/><br /><sub><b>Luis Fernando Fernández Cruz</b></sub></a><br /><a href="https://github.com/fernandoox/weather-app/commits?author=fernandoox" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
