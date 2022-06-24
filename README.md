@@ -1,12 +1,6 @@
 # Weather App ⛅️ 🌧️ ☀️ 🌗
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-_Web app to check the weather app, you can add and compare 20 cities using the search input_
+Web app to check the weather app, you can add and compare 20 cities using the search input
 
 ![GitHub issues](https://img.shields.io/github/issues/fernandoox/weather-app)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/fernandoox/weather-app)
@@ -38,5 +32,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
