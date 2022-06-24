@@ -20,6 +20,17 @@
         "doc",
         "tool"
       ]
+    },
+    {
+      "login": "ticsaul",
+      "name": "Saúl Pérez Tirzo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7355870?v=4",
+      "profile": "https://github.com/ticsaul",
+      "contributions": [
+        "code",
+        "data",
+        "security"
+      ]
     }
   ],
   "contributorsPerLine": 7
