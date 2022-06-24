@@ -42,6 +42,16 @@
         "research",
         "design"
       ]
+    },
+    {
+      "login": "jakirock4",
+      "name": "Alex Jair López",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12487906?v=4",
+      "profile": "https://github.com/jakirock4",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7
