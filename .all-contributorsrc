@@ -31,6 +31,17 @@
         "data",
         "security"
       ]
+    },
+    {
+      "login": "oscarmtl7",
+      "name": "oscarmtl7",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74276985?v=4",
+      "profile": "https://github.com/oscarmtl7",
+      "contributions": [
+        "code",
+        "research",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7
