@@ -6,11 +6,17 @@ Web app to check the weather app, you can add and compare 20 cities using the se
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/fernandoox/weather-app)
 ![GitHub top language](https://img.shields.io/github/languages/top/fernandoox/weather-app)
 
-## Demo link 🚀
+## ⏳️ Version 
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/fernandoox/weather-app/main)
+
+## 🚀 Demo link
 https://weather-app-seven-flax.vercel.app/
 
 ## 🌤️ Weather API
 You can review the documentation for the [OpenWeatherMap API](https://openweathermap.org/api) at any time.
+
+## 🚔️ MIT License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 ## Contributors ✨
 
