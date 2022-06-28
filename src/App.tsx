@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { getWeatherByLatLon } from './weatherApi';
 import { googleMapsApi } from './apis/googleMapsApi';
+import { getWeatherByLatLon } from './apis/weatherApi';
 import logo from './logo.svg';
 import './App.css';
 
