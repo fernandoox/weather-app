@@ -1,0 +1,58 @@
+{
+  "projectName": "weather-app",
+  "projectOwner": "fernandoox",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "fernandoox",
+      "name": "Luis Fernando Fernández Cruz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43055981?v=4",
+      "profile": "https://github.com/fernandoox",
+      "contributions": [
+        "code",
+        "doc",
+        "tool"
+      ]
+    },
+    {
+      "login": "ticsaul",
+      "name": "Saúl Pérez Tirzo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7355870?v=4",
+      "profile": "https://github.com/ticsaul",
+      "contributions": [
+        "code",
+        "data",
+        "security"
+      ]
+    },
+    {
+      "login": "oscarmtl7",
+      "name": "oscarmtl7",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74276985?v=4",
+      "profile": "https://github.com/oscarmtl7",
+      "contributions": [
+        "code",
+        "research",
+        "design"
+      ]
+    },
+    {
+      "login": "jakirock4",
+      "name": "Alex Jair López",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12487906?v=4",
+      "profile": "https://github.com/jakirock4",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
