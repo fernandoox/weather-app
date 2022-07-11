@@ -4,7 +4,6 @@ import { getWeatherByLatLon } from './apis/weatherApi';
 import './App.css';
 import { ThemeContext } from './context/ThemeContext';
 import './css/_darkMode.scss';
-import logo from './logo.svg';
 
 function App() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -23,10 +22,15 @@ function App() {
     <div className={theme}>
       <div className="background">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p className="text">
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
+          <div>
+            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+              Cambiar tema
+            </button>
+          </div>
+          <p className="text">tema actual : {theme}</p>
           <div>
             <input
               type="text"
@@ -37,19 +41,6 @@ function App() {
               Obtener Coordenadas
             </button>
           </div>
-          <div>
-            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-              Cambiar tema
-            </button>
-          </div>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     </div>
