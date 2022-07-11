@@ -1,13 +1,12 @@
 import { useContext, useEffect, useState } from 'react';
 import { googleMapsApi } from './apis/googleMapsApi';
+import { getWeatherByLatLon } from './apis/weatherApi';
 import './App.css';
-import { ThemeContext } from "./context/ThemeContext";
+import { ThemeContext } from './context/ThemeContext';
 import './css/_darkMode.scss';
 import logo from './logo.svg';
-import { getWeatherByLatLon } from './weatherApi';
 
 function App() {
-
   const { theme, setTheme } = useContext(ThemeContext);
   const [searchString, setSearchString] = useState<string>('');
   useEffect(() => {
@@ -22,10 +21,10 @@ function App() {
 
   return (
     <div className={theme}>
-      <div className='background'>
+      <div className="background">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p className='text'>
+          <p className="text">
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
           <div>
