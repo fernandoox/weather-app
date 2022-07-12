@@ -1,11 +1,11 @@
+import classnames from 'classnames';
 import { useContext, useEffect, useState } from 'react';
 import { googleMapsApi } from './apis/googleMapsApi';
 import { getWeatherByLatLon } from './apis/weatherApi';
-import './App.css';
 import { ThemeContext } from './context/ThemeContext';
-import './css/_darkMode.scss';
+import './styles/styles.scss';
 
-function App() {
+const App = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   const [searchString, setSearchString] = useState<string>('');
   useEffect(() => {
@@ -19,32 +19,25 @@ function App() {
   };
 
   return (
-    <div className={theme}>
-      <div className="background">
-        <header className="App-header">
-          <p className="text">
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <div>
-            <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-              Cambiar tema
-            </button>
-          </div>
-          <p className="text">tema actual : {theme}</p>
-          <div>
-            <input
-              type="text"
-              id="input-text"
-              onChange={(event) => setSearchString(event.target.value)}
-            />
-            <button id="button" onClick={() => getLatLon(searchString)}>
-              Obtener Coordenadas
-            </button>
-          </div>
+    <main className={classnames(theme, 'weather')}>
+      <section className="weather__container">
+        <header className="weather__header">
+          <h3>Component: Toggle theme</h3>
+          <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+            Cambiar tema
+          </button>
         </header>
-      </div>
-    </div>
+        <section className="weather__search">
+          <h3>Component: Input to search</h3>
+          <div>
+            <input type="text" onChange={(event) => setSearchString(event.target.value)} />
+            <button onClick={() => getLatLon(searchString)}>Obtener Coordenadas</button>
+          </div>
+        </section>
+        <section className="weather__results">Component: Show results</section>
+      </section>
+    </main>
   );
-}
+};
 
 export default App;
