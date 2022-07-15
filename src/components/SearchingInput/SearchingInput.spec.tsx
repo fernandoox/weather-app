@@ -8,3 +8,4 @@ test('renders SearchingInput component', () => {
     expect(inputEl).toBeInTheDocument();
     expect(inputEl).toHaveAttribute("placeholder", "Search for a city");
 });
+

@@ -1,45 +1,121 @@
-.SearchingInput-container {
-  /*border: 1px solid;*/
-  /*border-color: yellow;*/
-  text-align: left;
+//light mode colors
+$light-title-color: #2c2e33;
+$light-input-bg-color: #fff;
+$light-input-text-color: #2c2e33;
+$light-button-bg-color: #03a9f4;
+$light-button-text-color: #fff;
+
+//dark mode colors
+$dark-title-color: #fff;
+$dark-input-bg-color: #fff;
+$dark-input-text-color: #2c2e33;
+$dark-button-bg-color: #1971c2;
+$dark-button-text-color: #fff;
+
+//settings colors for component
+.light {
+  .SearchingInput-title {
+    color: $light-title-color;
+  }
+
+  .SearchingInput-form {
+    &__input {
+      background: $light-input-bg-color;
+      color: $light-input-text-color;
+    }
+  }
+
+  .SearchingInput-btn {
+    &--primary {
+      background: $light-button-bg-color;
+      color: $light-button-text-color;
+
+      &:hover {
+        background: darken($light-button-bg-color, 4%);
+      }
+
+      &:active {
+        background: $light-button-bg-color;
+      }
+    }
+  }
 }
 
-.SearchingInput-title {
-  /*border: 1px solid;*/
-  /*border-color: red;*/
-  margin: 0;
-  margin-left: 1em;
-  margin-bottom: 0.5em;
-  color: white;
+.dark {
+  .SearchingInput-title {
+    color: $dark-title-color;
+  }
+
+  .SearchingInput-form {
+    &__input {
+      background: $dark-input-bg-color;
+      color: $dark-input-text-color;
+    }
+  }
+
+  .SearchingInput-btn {
+    &--primary {
+      background: $dark-button-bg-color;
+      color: $dark-button-text-color;
+
+      &:hover {
+        background: darken($dark-button-bg-color, 4%);
+      }
+
+      &:active {
+        background: $dark-button-bg-color;
+      }
+    }
+  }
+}
+
+//styles component
+.SearchingInput-container {
+  background: transparent;
+  font: 1rem "PT Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .SearchingInput-form {
-  /*color: white;*/
-  /*margin-left: 1em;*/
-  /*margin-right: 1em;*/
-  /*border: 1px solid;*/
-  /*border-color: yellow;*/
-  margin: 0;
+  &__input {
+    width: 25em;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    padding: 22px 18px;
+  }
 }
 
-.SearchingInput-input {
-  outline: none;
-  background-color: #1b1647;
-  border: none;
-  border-bottom: 2px solid white;
-  font-size: large;
-  color: white;
-  /*height: 2.5em;*/
-  /*width: 20em;*/
-  margin-left: 4em;
+.SearchingInput-btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &--primary {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 12px 36px;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+  }
+
+  &--inside {
+    margin-left: -96px;
+  }
 }
 
-.SearchingInput-button {
-  background-color: red;
-  border-color: red;
-  border-radius: 4px;
-  color: white;
-  font-weight: bold;
-  height: 2.5em;
-  width: 6em;
-}
